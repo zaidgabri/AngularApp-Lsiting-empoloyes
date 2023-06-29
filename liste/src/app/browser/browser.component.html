@@ -1,0 +1,16 @@
+<div class="">
+    <div class="card" *ngFor="let std of students;">
+        <div class="card__wrapper" *ngIf="std.fName===filter.searchTerm">
+            <div class="id">{{std.id}}</div>
+            <div class="first__name">{{std.fName}}</div>
+            <div class="last__name">{{std.lName}}</div>
+            <div class="cin">{{std.cin}}</div>
+            <div class="mark">{{std.mark}}</div>
+            <div class="action" style="display: flex;">
+                <button>Add</button>
+                <button>Delete</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
